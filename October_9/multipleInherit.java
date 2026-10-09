@@ -9,7 +9,7 @@ class Baby implements Father, Mother{
     Baby(){
         System.out.println("I'm just a baby!");
     }
-    @Override 
+    @Override
     public void isPa(){
         System.out.println("This is the Father");
     }

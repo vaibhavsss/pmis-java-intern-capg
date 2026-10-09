@@ -33,7 +33,7 @@ class ITManager extends CompanyEmployee {
 
 public class practiceTwo {
     public static void main(String[] args) {
-        ITManager manager = new ITManager("Anish", 50000, "IT");
+        ITManager manager = new ITManager("Vlad", 50000, "IT");
 
         manager.displayDetails();
     }
