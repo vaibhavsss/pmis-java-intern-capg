@@ -1,4 +1,6 @@
 package October_12.hasA;
+
+// has-a relation example
 class Battery{
     int capacityMah;
      //constructor

@@ -1,5 +1,5 @@
 package October_12.hasA;
-
+// has-a relation example
 public class hasMain {
     public static void main(String[] args) {
         Battery b1 = new Battery(5000);
