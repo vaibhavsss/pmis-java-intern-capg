@@ -1,5 +1,8 @@
 package October_13.exceptionHandling;
+/*
+The throws keyword is used in a method declaration to indicate that the method may throw one or more exceptions.
 
+ */
 import java.io.*;
 
 public class throwsEx {
@@ -14,8 +17,7 @@ public class throwsEx {
             readFile();
         } catch (Exception e) {
             // TODO: handle exception
-            System.out.println("Could not find the file." + e.getMessage()
-        ); // no such file or directory
+            e.printStackTrace(); // no such file or directory
         }
     }
 }
