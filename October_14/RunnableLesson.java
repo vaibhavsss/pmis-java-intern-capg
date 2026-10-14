@@ -8,26 +8,46 @@ to implement multiple interfaces while extending only one class
 */
 
 //Imagine an employee class already extends Person. You want it to run a report in the background.
-class Chef{
-    void justSit(){
-        System.out.println("Chef is sitting idle.");
-    }
-}
+// class Chef{
+//     void justSit(){
+//         System.out.println("Chef is sitting idle.");
+//     }
+// }
 
-class WokChef extends Chef implements Runnable{
-    @Override 
+// class WokChef extends Chef implements Runnable{
+//     @Override 
+//     public void run(){
+//         System.out.println("The chef is cooking.");
+//     }
+// }
+// public class RunnableLesson {
+//     public static void main(String[] args) {
+//         WokChef c1 = new WokChef();
+//         c1.justSit();
+
+//         Thread worker = new Thread(c1);
+//         worker.start();
+
+//         System.out.println("Main thread.");
+//     }
+// }
+
+/*
+Create a class named DownloadTask that implements Runnable. 
+Its run() method should print "Downloading file..." three times using a loop. 
+In main(), create a DownloadTask object, pass it to a Thread, and start the thread.
+*/
+class DownloadTask implements Runnable{
     public void run(){
-        System.out.println("The chef is cooking.");
+        for (int i = 1; i <= 3; i++){
+            System.out.println("Downloading file...");
+        }
     }
 }
 public class RunnableLesson {
     public static void main(String[] args) {
-        WokChef c1 = new WokChef();
-        c1.justSit();
-
-        Thread worker = new Thread(c1);
+        DownloadTask dd = new DownloadTask();
+        Thread worker = new Thread(dd);
         worker.start();
-
-        System.out.println("Main thread.");
     }
 }
