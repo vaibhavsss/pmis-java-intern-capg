@@ -20,6 +20,8 @@ class Pair<J, K>{
 }
 public class genericMultiType {
     public static void main(String[] args) {
+        // the type argument passed to the type parameter must be a reference type
+        // in short "wrapper class"
         Pair<String, Integer> p = new Pair<>("Age", 21);
         String J = p.getKey();
         Integer K = p.getValue();
