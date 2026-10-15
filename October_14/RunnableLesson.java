@@ -48,6 +48,7 @@ public class RunnableLesson {
     public static void main(String[] args) {
         DownloadTask dd = new DownloadTask();
         Thread worker = new Thread(dd);
+        System.out.println("The priority of the thread is: " + worker.getPriority());
         worker.start();
     }
 }
