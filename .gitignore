@@ -1,0 +1,10 @@
+# Local Java compiled output
+/bin/
+
+# macOS metadata
+.DS_Store
+
+# Local secrets
+.env
+.env.*
+!.env.example
