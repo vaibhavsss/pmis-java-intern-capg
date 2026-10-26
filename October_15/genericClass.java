@@ -1,33 +1,27 @@
+
 package October_15;
-class Box<T>{
-    private T value;
 
-    public Box(){}
+class StudentRecord<T, U> {
+    private T name;
+    private U rollNumber;
 
-    public Box (T value){
-        this.value = value;
+    public StudentRecord(T name, U rollNumber) {
+        this.name = name;
+        this.rollNumber = rollNumber;
     }
-    public T setItem(T value){
-        this.value = value;
-        return value;
-    }
-    public T getValue(){
-        return value;
+
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Roll Number: " + rollNumber);
     }
 }
+
 public class genericClass {
     public static void main(String[] args) {
-        //string testing
-        Box<String> stringBox = new Box<>();
-        stringBox.setItem("Samsung");
-        String ss = stringBox.getValue();
-        System.out.println(ss);
 
-        //Integer testing
-        Box<Integer> intBox = new Box<>();
-        intBox.setItem(25000);
-        Integer price = intBox.getValue();
-        System.out.println(price);
+        StudentRecord<String, Integer> student =
+                new StudentRecord<String, Integer>("Vaibhav", 101);
 
+        student.display();
     }
 }
