@@ -59,3 +59,17 @@ SELECT
 FROM students AS s
 INNER JOIN batches AS b
     ON s.batch_no = b.batch_no;
+    
+SHOW DATABASES;
+
+USE pmis;
+SHOW TABLES;
+select * from courses;
+DESCRIBE students;
+
+CREATE database university_placement;
+
+CREATE DATABASE jpademo;
+SHOW DATABASES;
+
+
